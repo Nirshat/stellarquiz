@@ -6,7 +6,6 @@ body{
   padding:0;
   margin:0;
   background-image: url('../public/images/space1.png');
-  background-repeat: no-repeat;
   background-size:cover;
 }
 
@@ -114,10 +113,6 @@ body{
 }
 
 @media only screen and (min-width:700px){
-  body{
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
   .app-box{
     width:75%;
@@ -162,7 +157,6 @@ body{
   
   body{
     background-image: url('../public/images/space2.png');
-    background-size: cover;
     background-repeat: no-repeat;
   }
 

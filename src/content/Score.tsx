@@ -8,13 +8,18 @@ interface Score{
 }
 
 const Score = ({score, upto}: Score) => {
+
+  const retake = () => {
+    window.location.reload();
+  };
+
   return (
     <>
       <div className="scoreboard">
         Your Score: {score} / {upto}
       </div>
       <div id="retake">
-        <Button variant="contained" color="primary" href="/" endIcon={<ReplayIcon />}> Retake? </Button>
+        <Button variant="contained" color="primary" onClick={retake} endIcon={<ReplayIcon />}> Retake? </Button>
       </div>
     </>
   )
