@@ -1,0 +1,189 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background-image: url('../public/images/space1.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.app-box{
+  display: flex;
+  flex-direction: column;
+  grid-gap:2rem;
+  width:90%;
+  margin: auto;
+  padding:8rem 0;
+  /* border:1px solid; */
+}
+
+.title{
+  text-align: center;
+  margin:0;
+  color: #fff;
+  font-size:35px;
+  font-weight: bold;
+}
+#quiz{
+  color:#d48aff;
+}
+
+.subtitle{
+  font-weight:100;
+  color:#444;
+  color:#f2f2f2;
+  text-align: center;
+  font-size:14px;
+  /* background:#00000041; */
+}
+
+
+.qbox{
+  border:1px solid #700fa8;
+  background:#00000088;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
+  border-radius:8px;
+  padding:1rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.q{
+  font-weight: bold;
+  font-size:18px;
+  text-align: center;
+  margin-bottom:1.4rem;
+  color:#fff;
+  /* color:#444; */
+}
+
+.opt{
+  display:grid;
+  grid-template-columns:repeat(1fr);
+  grid-gap:1rem;
+}
+
+.opt div{
+  /* border:1px solid #aaa;
+  border:1px solid #f2f2f2; */
+  background:#666;
+  background:#0000008f;
+  background: #9e2ce0;
+  color:#fff;
+  text-align: center;
+  padding:1rem;
+  cursor: pointer;
+  font-size:16px;
+  border-radius:16px;
+}
+
+.opt div:hover{
+  color:#fff;
+  background: #3daa61;
+  background: #278a34;
+  background: #9e2ce0;
+  transition: .4s;
+  font-weight: bold;
+}
+
+.scoreboard{
+  font-size:30px;
+  text-align: center;
+  color:#f2f2f2;
+  /* background:#00000048; */
+}
+
+#retake{
+  text-align: center;
+}
+
+.footline{
+  text-align: center;
+  color:#f2f2f2;
+  font-size:14px;
+}
+
+#techs{
+  font-size: 13px;
+}
+
+@media only screen and (min-width:700px){
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .app-box{
+    width:75%;
+    padding:15rem 0;
+  }
+
+  .qbox{
+    padding:2rem;
+  }
+
+  .title{
+    font-size:50px;
+  }
+
+  .subtitle{
+    font-size:16px;
+  }
+
+  .q{
+    font-size:22px;
+  }
+
+  .opt div{
+    font-size:17px;
+  }
+
+  .footline{
+    font-size:16px;
+  }
+  
+  #techs{
+    font-size: 15px;
+  }
+
+  .scoreboard{
+    font-size:50px;
+  }
+}
+
+
+@media only screen and (min-width:1000px){
+  
+  body{
+    background-image: url('../public/images/space2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .app-box{
+    width:60%;
+    padding:6rem 0;
+  }
+
+  .subtitle{
+    background:none;
+  }
+
+  .opt{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+
+
+
+.MuiButton-root {
+  text-transform: none !important;
+  background: #9e2ce0 !important;
+}
